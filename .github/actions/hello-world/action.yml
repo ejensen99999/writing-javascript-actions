@@ -1,5 +1,16 @@
 name: "my hello world action"
 description: "say hello with github action"
+
+inputs:
+  first-greeting:
+    description: "Who would you like to greet?"
+    required: true
+    default: "Hubot"
+  second-greeting:
+    description: "Who else would you like to greet?"
+    required: false
+    default: "boogers"
+
 runs:
   using: node12
   main: main.js
