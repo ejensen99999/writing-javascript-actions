@@ -1,0 +1,5 @@
+name: "my hello world action"
+description: "say hello with github action"
+runs:
+  using: node12
+  main: main.js
