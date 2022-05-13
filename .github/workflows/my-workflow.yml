@@ -5,7 +5,6 @@ on: [push]
 jobs:
   action:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v1
 
@@ -13,3 +12,6 @@ jobs:
         uses: ./.github/actions/hello-world
         with:
           first-greeting: "Zola"
+
+      - name: joke
+        uses: ./.github/actions/joke-action
